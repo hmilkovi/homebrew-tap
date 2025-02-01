@@ -3,7 +3,7 @@ class TlsBench < Formula
 	homepage "https://github.com/hmilkovi/tls-bench"
 	version "0.1.1"
 
- if OS.mac? && Hardware::CPU.intel?
+  if OS.mac? && Hardware::CPU.intel?
     url ""
     url "https://github.com/hmilkovi/tls-bench/releases/download/v#{version}/tls-bench-v#{version}-x86_64-apple-darwin.tar.gz"
     sha256 "5500274813647b1cadd5c1e2245fc6a5e3ee46ca63722179cb38d0a56fe42e35"
