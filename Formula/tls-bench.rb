@@ -19,8 +19,6 @@ class TlsBench < Formula
     sha256 "de5ce566b9f70fbe6a8e72de690c067d98bb66234c19c08c143828dbbf786d5d"
   end
 
-
-
   def install
     bin.install "tls-bench"
   end
