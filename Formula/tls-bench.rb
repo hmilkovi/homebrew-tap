@@ -1,7 +1,7 @@
 class TlsBench < Formula
-	desc "A TLS benchmarking tool for evaluating servers TLS handshake performance."
-	homepage "https://github.com/hmilkovi/tls-bench"
-	version "0.1.1"
+  desc "A TLS benchmarking tool for evaluating servers TLS handshake performance."
+  homepage "https://github.com/hmilkovi/tls-bench"
+  version "0.1.1"
 
   if OS.mac? && Hardware::CPU.intel?
     url ""
@@ -21,11 +21,11 @@ class TlsBench < Formula
 
 
 
-	def install
-		bin.install "tls-bench"
-	end
+  def install
+    bin.install "tls-bench"
+  end
 
-	test do
+  test do
     system "#{bin}/tls-bench --version"
   end
 end
